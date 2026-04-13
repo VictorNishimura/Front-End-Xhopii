@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro cliente</title>
+    <link rel="stylesheet" href="cadastrocliente.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logo.png" alt="Logo Xhopii">
+        <h1>Xhopii</h1>
+        <button class="sair-btn">Sair</button>
+    </header>
+
+    <nav class="menu-horizontal">
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="cadastroCliente.php">Cadastro Cliente</a></li>
+            <li><a href="verCliente.php">Ver Clientes</a></li>
+            <li><a href="view/interfaceproduto.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-bg">
+        <div class="card">
+            <h2>Cadastrar Cliente</h2>
+
+            <form action="cadastrarCliente.php" method="POST" enctype="multipart/form-data">
+                <input class="field" type="text" name="nome" placeholder="Nome" required>
+                <input class="field" type="text" name="sobrenome" placeholder="Sobrenome" required>
+                <input class="field" type="text" name="cpf" placeholder="CPF" required>
+                <input class="field" type="date" name="data_nascimento" required>
+                <input class="field" type="text" name="telefone" placeholder="Telefone" required>
+                <input class="field" type="email" name="email" placeholder="Email" required>
+                <input class="field" type="password" name="senha" placeholder="Senha" required>
+
+                <div class="foto-label">Selecionar foto de perfil:</div>
+                <div class="file-row">
+                    <input type="file" name="foto" id="foto" accept="image/*" style="display:none">
+                    <button type="button" class="escolher-btn" onclick="document.getElementById('foto').click()">Escolher arquivo</button>
+                    <span class="nenhum" id="nome-arquivo">Nenhum arquivo escolhido</span>
+                </div>
+
+                <button type="submit" class="cadastrar-btn">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Atendimento ao Cliente</h3>
+                <ul>
+                    <li>Central de Ajuda</li>
+                    <li>Como Comprar</li>
+                    <li>Métodos de Pagamento</li>
+                    <li>Garantia Xhopii</li>
+                    <li>Devolução e Reembolso</li>
+                    <li>Fale Conosco</li>
+                    <li>Ouvidoria</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Sobre a Xhopii</h3>
+                <ul>
+                    <li>Sobre Nós</li>
+                    <li>Políticas Xhopii</li>
+                    <li>Política de Privacidade</li>
+                    <li>Programa de Aliados da Xhopii</li>
+                    <li>Seja um Entregador Xhopii</li>
+                    <li>Ofertas Relâmpago</li>
+                    <li>Xhopii Blog</li>
+                    <li>Imprensa</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Pagamento</h3>
+                <p>Aceitamos diversas formas de pagamento.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Atendimento ao Cliente</h3>
+                <ul>
+                    <li>Email: contato@xhopii.com</li>
+                    <li>Telefone: (00) 0000-0000</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Seu Site - Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('foto').addEventListener('change', function () {
+            const span = document.getElementById('nome-arquivo');
+            span.textContent = this.files.length > 0 ? this.files[0].name : 'Nenhum arquivo escolhido';
+        });
+    </script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interfaceproduto.css">
+    <script type="text/javascript" src="../script.js"></script>
+    <title>Document</title>
+</head>
+</html>
+<body>
+    
+<header>
+    <img src="../assets/img/logo.png">
+    <h1>Xhopii</h1>
+</header>
+
+<nav class="menu-horizontal">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="cadastroCliente.php">Cadastro Cliente</a></li>
+        <li><a href="verCliente.php">Ver Clientes</a></li>
+    </ul>
+</nav>
+
+<!-- NOVO CONTAINER -->
+<div class="container-produto">
+
+    <div class="produto-imagem">
+        <div class="produto-miniatura">
+            <img src="../assets/img/produto1.png" onclick="selecionarImgProduto(this)">
+            <img src="../assets/img/produto2.png" onclick="selecionarImgProduto(this)">
+            <img src="../assets/img/produto3.png" onclick="selecionarImgProduto(this)">
+            <img src="../assets/img/produto4.png" onclick="selecionarImgProduto(this)">
+            <img src="../assets/img/produto5.png" onclick="selecionarImgProduto(this)">
+        </div>
+
+        <div class="produto-principal">
+            <img id="imgPrincipal" src="../assets/img/produto1.png">
+        </div>
+    </div>
+
+    <div class="produto-detalhes">
+        <h1>Camisa Desenvolvedor Front-End CSS</h1>
+        <h2 id="precoProduto">R$56,90</h2>
+        <p id="qtdDisponivel">171 peças disponíveis</p>
+
+        <p>Modelos:</p>
+        <button class="botao" onclick="mudarPreco(this)">Preto</button>
+        <button class="botao" onclick="mudarPreco(this)">Azul</button>
+        <button class="botao" onclick="mudarPreco(this)">Verde</button>
+        <button class="botao" onclick="mudarPreco(this)">Cinza</button>
+        <button class="botao" onclick="mudarPreco(this)">Rosa</button>
+
+        <p>Tamanhos:</p>
+        <button class="botao">P</button>
+        <button class="botao">M</button>
+        <button class="botao">G</button>
+        <button class="botao">GG</button>
+
+        <p id="tamanhoSelecionado">Tamanho Selecionado: P</p>
+
+        <button id="botaoComprar">Comprar Agora</button>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-container">
+    
+      <div class="footer-column">
+        <h3>Atendimento ao Cliente</h3>
+        <ul>
+            <li>Central de Ajuda</li>
+            <li>Como Comprar</li>
+            <li>Metodos de Pagamentos</li>
+            <li>Garantia Xhopii</li>
+            <li>Devolução e Rembolso</li>
+            <li>Fale Conosco</li>
+            <li>Ouditoria</li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Sobre a Xhopii</h3>
+        <ul>
+            <li>Sobre nós</li>
+            <li>Politica Xhopii</li>
+            <li>politica de privacidade</li>
+            <li>Programas de aliado Xhoppi</li>
+            <li>Seja um entregador Xhoppi</li>
+            <li>Ofertas Relampagos</li>
+            <li>Xhoppi Blog</li>
+            <li>Impresa</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Pagamento</h3>
+        <p>Seu site ou empresa. Aqui vai uma breve descrição.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Atendimento ao Cliente</h3>
+        <ul>
+          <li>Email: contato@site.com</li>
+          <li>Telefone: (00) 0000-0000</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Seu Site - Todos os direitos reservados
+    </div>
+</footer>
+
+</body>

@@ -2,42 +2,52 @@
     margin: 0;
 }
 
-.nav-primaria {
-    color: white;
-    background-color: rgb(251, 86, 48);
+header{
+    height: 85px;
     width: 100%;
-    height: 80px;
+    background-color: rgb(251,86,48);
 }
 
-.nav-primaria img {
-    margin-left: -30px;
+header h1{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    display: inline;
+}
+
+header img{
+    height: 60px;
     width: 60px;
+    margin-top: 5px;
+    display: inline;
 }
 
-.nav-primaria ul {
-    display: flex; 
-    list-style: none; 
-}
-
-.nav-primaria h1 {
-    margin-top: 30px;
-}
-
-.nav-secundaria {
-    color: white;
-    background-color: rgb(251, 119, 48);
-    width: 100%;
-    height: 40px;
-    gap: 30px;
-}
-
-.nav-secundaria ul {
+.menu-horizontal ul{
+    background-color: rgb(215, 215, 215);
     display: flex;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
     padding: 0;
-    
-    margin-left: 20%;
-    gap: 20px;
+}
+
+.menu-horizontal ul li{
+    list-style: none;
+}
+
+.menu-horizontal ul li a{
+    font-size: 20px;
+    color: rgb(251,86,48);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menu-horizontal ul li a:hover{
+    font-weight: bold;
+    color: rgb(251,86,48);
+    background-color: rgb(255, 255, 255);
 }
 
 .homepromocao {
@@ -89,52 +99,52 @@
 
 
 footer {
-    background-color: rgb(245, 245, 245)
-    
-  }
+    background-color: rgb(245, 245, 245);
+    margin-top: 50px;
+}
 
-  .footer-container {
+.footer-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+}
 
-  .footer-column {
+.footer-column {
     flex: 1;
     min-width: 200px;
     margin: 10px;
-  }
+}
 
-  .footer-column h3 {
+.footer-column h3 {
     margin-bottom: 15px;
     font-size: 18px;
-  }
+}
 
-  .footer-column ul {
+.footer-column ul {
     list-style: none;
     padding: 0;
-  }
+}
 
-  .footer-column ul li {
+.footer-column ul li {
     margin-bottom: 10px;
-  }
+}
 
-  .footer-column ul li a {
+.footer-column ul li a {
     color: #ccc;
     text-decoration: none;
-  }
+}
 
-  .footer-column ul li a:hover {
+.footer-column ul li a:hover {
     color: #fff;
-  }
+}
 
-  .footer-bottom {
+.footer-bottom {
     text-align: center;
     margin-top: 30px;
     border-top: 1px solid #444;
     padding-top: 15px;
     font-size: 14px;
     color: #aaa;
-  }
+}
