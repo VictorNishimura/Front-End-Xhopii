@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro cliente</title>
-    <link rel="stylesheet" href="cadastrocliente.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastrofuncionario.css">
 </head>
 <body>
+ 
+    <!-- HEADER -->
     <header>
-        <img src="../assets/img/logo.png" alt="Logo Xhopii">
+        <img src="assets/img/logo.png" alt="Logo Xhopii">
         <h1>Xhopii</h1>
         <button class="sair-btn">Sair</button>
     </header>
-
+ 
+    <!-- NAV -->
     <nav class="menu-horizontal">
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -25,35 +28,55 @@
             <li><a href="interfaceproduto.html">Visualizar Produto Especifico</a></li>
         </ul>
       </nav>
-
+ 
+    <!-- CONTEÚDO PRINCIPAL -->
     <div class="page-bg">
         <div class="card">
-            <h2>Cadastrar Cliente</h2>
-
-            
-                <input class="field" type="text" name="nome" placeholder="Nome" required>
-                <input class="field" type="text" name="sobrenome" placeholder="Sobrenome" required>
-                <input class="field" type="text" name="cpf" placeholder="CPF" required>
-                <input class="field" type="date" name="data_nascimento" required>
-                <input class="field" type="text" name="telefone" placeholder="Telefone" required>
-                <input class="field" type="email" name="email" placeholder="Email" required>
-                <input class="field" type="password" name="senha" placeholder="Senha" required>
-
-                <div class="foto-label">Selecionar foto de perfil:</div>
-                <div class="file-row">
-                    <input type="file" name="foto" id="foto" accept="image/*" style="display:none">
-                    <button type="button" class="escolher-btn" onclick="document.getElementById('foto').click()">Escolher arquivo</button>
-                    <span class="nenhum" id="nome-arquivo">Nenhum arquivo escolhido</span>
-                </div>
-
-                <button type="submit" class="cadastrar-btn">CADASTRAR</button>
-            </form>
+            <h2>Cadastrar Funcionário</h2>
+ 
+            <input class="field" type="text" placeholder="Nome">
+            <input class="field" type="text" placeholder="Sobrenome">
+            <input class="field" type="text" placeholder="CPF">
+            <input class="field" type="text" placeholder="RG">
+            <input class="field" type="date">
+            <input class="field" type="text" placeholder="Telefone">
+            <input class="field" type="email" placeholder="Email">
+            <input class="field" type="text" placeholder="Matrícula">
+ 
+            <select class="field">
+                <option value="" disabled selected>Cargo</option>
+                <option>Atendente</option>
+                <option>Gerente</option>
+                <option>Supervisor</option>
+                <option>Entregador</option>
+                <option>Estoquista</option>
+            </select>
+ 
+            <select class="field">
+                <option value="" disabled selected>Departamento</option>
+                <option>Vendas</option>
+                <option>Logística</option>
+                <option>Administrativo</option>
+                <option>Suporte</option>
+                <option>TI</option>
+            </select>
+ 
+            <input class="field" type="password" placeholder="Senha">
+ 
+            <div class="foto-label">Selecionar foto de perfil:</div>
+            <div class="file-row">
+                <button class="escolher-btn">Escolher arquivo</button>
+                <span class="nenhum">Nenhum arquivo escolhido</span>
+            </div>
+ 
+            <button class="cadastrar-btn">CADASTRAR</button>
         </div>
     </div>
-
+ 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
-
+ 
             <div class="footer-column">
                 <h3>Atendimento ao Cliente</h3>
                 <ul>
@@ -66,7 +89,7 @@
                     <li>Ouvidoria</li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Sobre a Xhopii</h3>
                 <ul>
@@ -80,12 +103,12 @@
                     <li>Imprensa</li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Pagamento</h3>
                 <p>Aceitamos diversas formas de pagamento.</p>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Siga-nos</h3>
                 <ul>
@@ -96,7 +119,7 @@
                     <li><a href="#">LinkedIn</a></li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Atendimento ao Cliente</h3>
                 <ul>
@@ -104,18 +127,13 @@
                     <li>Telefone: (00) 0000-0000</li>
                 </ul>
             </div>
-
+ 
         </div>
-
+ 
         <div class="footer-bottom">
-            © 2026 Seu Site - Todos os direitos reservados
+            © 2023 Xhopii. Todos os direitos acadêmicos reservados
         </div>
     </footer>
-
-    <script>
-        document.getElementById('foto').addEventListener('change', function () {
-            const span = document.getElementById('nome-arquivo');
-            span.textContent = this.files.length > 0 ? this.files[0].name : 'Nenhum arquivo escolhido';
-        });
-    </script>
+ 
+</body>
 </html>

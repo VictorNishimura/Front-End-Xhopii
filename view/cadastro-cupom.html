@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro cliente</title>
-    <link rel="stylesheet" href="cadastrocliente.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastrocupom.css">
 </head>
 <body>
     <header>
-        <img src="../assets/img/logo.png" alt="Logo Xhopii">
+        <img src="assets/img/logo.png" alt="Logo Xhopii">
         <h1>Xhopii</h1>
         <button class="sair-btn">Sair</button>
     </header>
-
+ 
     <nav class="menu-horizontal">
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -25,35 +25,50 @@
             <li><a href="interfaceproduto.html">Visualizar Produto Especifico</a></li>
         </ul>
       </nav>
-
+ 
     <div class="page-bg">
         <div class="card">
-            <h2>Cadastrar Cliente</h2>
-
-            
-                <input class="field" type="text" name="nome" placeholder="Nome" required>
-                <input class="field" type="text" name="sobrenome" placeholder="Sobrenome" required>
-                <input class="field" type="text" name="cpf" placeholder="CPF" required>
-                <input class="field" type="date" name="data_nascimento" required>
-                <input class="field" type="text" name="telefone" placeholder="Telefone" required>
-                <input class="field" type="email" name="email" placeholder="Email" required>
-                <input class="field" type="password" name="senha" placeholder="Senha" required>
-
-                <div class="foto-label">Selecionar foto de perfil:</div>
-                <div class="file-row">
-                    <input type="file" name="foto" id="foto" accept="image/*" style="display:none">
-                    <button type="button" class="escolher-btn" onclick="document.getElementById('foto').click()">Escolher arquivo</button>
-                    <span class="nenhum" id="nome-arquivo">Nenhum arquivo escolhido</span>
-                </div>
-
-                <button type="submit" class="cadastrar-btn">CADASTRAR</button>
-            </form>
+            <h2>Cadastrar Cupom de Desconto</h2>
+ 
+            <input class="field" type="text" placeholder="Nome do cupom">
+            <input class="field" type="text" placeholder="Código do cupom (ex: XHOPII20)">
+ 
+            <select class="field">
+                <option value="" disabled selected>Tipo de desconto</option>
+                <option>Percentual (%)</option>
+                <option>Valor fixo (R$)</option>
+                <option>Frete grátis</option>
+            </select>
+ 
+            <input class="field" type="number" placeholder="Valor do desconto">
+            <input class="field" type="number" placeholder="Valor mínimo de compra (R$)">
+            <input class="field" type="number" placeholder="Limite de usos">
+ 
+            <select class="field">
+                <option value="" disabled selected>Aplicável a</option>
+                <option>Todos os produtos</option>
+                <option>Categoria específica</option>
+                <option>Produto específico</option>
+            </select>
+ 
+            <select class="field">
+                <option value="" disabled selected>Status</option>
+                <option>Ativo</option>
+                <option>Inativo</option>
+            </select>
+ 
+            <div class="field-row">
+                <input class="field" type="date" placeholder="Data de início">
+                <input class="field" type="date" placeholder="Data de validade">
+            </div>
+ 
+            <button class="cadastrar-btn">CADASTRAR</button>
         </div>
     </div>
-
+ 
     <footer>
         <div class="footer-container">
-
+ 
             <div class="footer-column">
                 <h3>Atendimento ao Cliente</h3>
                 <ul>
@@ -66,7 +81,7 @@
                     <li>Ouvidoria</li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Sobre a Xhopii</h3>
                 <ul>
@@ -80,12 +95,12 @@
                     <li>Imprensa</li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Pagamento</h3>
                 <p>Aceitamos diversas formas de pagamento.</p>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Siga-nos</h3>
                 <ul>
@@ -96,7 +111,7 @@
                     <li><a href="#">LinkedIn</a></li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Atendimento ao Cliente</h3>
                 <ul>
@@ -104,18 +119,13 @@
                     <li>Telefone: (00) 0000-0000</li>
                 </ul>
             </div>
-
+ 
         </div>
-
+ 
         <div class="footer-bottom">
-            © 2026 Seu Site - Todos os direitos reservados
+            © 2023 Xhopii. Todos os direitos acadêmicos reservados
         </div>
     </footer>
-
-    <script>
-        document.getElementById('foto').addEventListener('change', function () {
-            const span = document.getElementById('nome-arquivo');
-            span.textContent = this.files.length > 0 ? this.files[0].name : 'Nenhum arquivo escolhido';
-        });
-    </script>
+ 
+</body>
 </html>

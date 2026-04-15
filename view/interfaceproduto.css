@@ -5,7 +5,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
 header{
     height: 85px;
     display: flex;
@@ -24,7 +23,6 @@ header h1{
     font-size: 35px;
 }
 
-/* MENU */
 .menu-horizontal ul{
     background-color: rgb(215, 215, 215);
     display: flex;
@@ -48,14 +46,12 @@ header h1{
     font-weight: bold;
 }
 
-/* CONTAINER PRINCIPAL */
 .container-produto{
     display: flex;
     gap: 40px;
     margin: 50px 10%;
 }
 
-/* IMAGEM */
 .produto-imagem{
     display: flex;
     gap: 10px;
@@ -84,7 +80,6 @@ header h1{
     max-width: 400px;
 }
 
-/* DETALHES */
 .produto-detalhes{
     width: 50%;
 }
